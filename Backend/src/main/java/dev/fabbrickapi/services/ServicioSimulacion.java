@@ -3,7 +3,6 @@ package dev.fabbrickapi.services;
 import dev.fabbrickapi.models.Simulacion;
 import dev.fabbrickapi.repositories.RepositorioSimulacion;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cglib.core.Local;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
@@ -14,24 +13,21 @@ import java.util.List;
 @Service
 public class ServicioSimulacion {
     RepositorioSimulacion repositorioSimulacion;
+
     @Autowired
-    public ServicioSimulacion(RepositorioSimulacion repositorioSimulacion){
+    public ServicioSimulacion(RepositorioSimulacion repositorioSimulacion) {
         this.repositorioSimulacion = repositorioSimulacion;
     }
 
-//    public List<Simulacion> listar(){
-//        return repositorioSimulacion.finBestSimulations();
-//    }
-
-    public ResponseEntity<?> simular(Simulacion simulacion){
+    public ResponseEntity<?> simular(Simulacion simulacion) {
         String tipoTela = simulacion.getTipoTela();
         Double cantidadTela = simulacion.getCantidadMateriaTextil();
         Double cantidadPegamento = simulacion.getCantidadPegamento();
-        if(cantidadTela == null || cantidadPegamento == null || tipoTela.isBlank()){
+        if (cantidadTela == null || cantidadPegamento == null || tipoTela.isBlank()) {
             return new ResponseEntity<>("Datos insuficientes", HttpStatus.BAD_REQUEST);
-        } else{
+        } else {
             LocalDateTime fecha = LocalDateTime.now();
-            System.out.println("Datos: "+tipoTela + " "+ cantidadTela + " " + cantidadPegamento);
+            System.out.println("Datos: " + tipoTela + " " + cantidadTela + " " + cantidadPegamento);
             Simulacion s = new Simulacion();
             Simulacion s1 = s.simular(tipoTela);
             s1.setCantidadMateriaTextil(cantidadTela);
@@ -44,11 +40,11 @@ public class ServicioSimulacion {
         }
     }
 
-    public List<Simulacion> listar(){
+    public List<Simulacion> listar() {
         return repositorioSimulacion.listarSimulacionesOrdenadas();
     }
 
-    public Simulacion listarUltimaSimulacion(){
+    public Simulacion listarUltimaSimulacion() {
         return repositorioSimulacion.listarUltimaSimulacion();
     }
 }

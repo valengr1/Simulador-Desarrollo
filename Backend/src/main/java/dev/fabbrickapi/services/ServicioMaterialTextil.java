@@ -10,12 +10,13 @@ import java.util.List;
 @Service
 public class ServicioMaterialTextil {
     RepositorioMaterialTextil repositorioMaterialTextil;
+
     @Autowired
-    public ServicioMaterialTextil(RepositorioMaterialTextil repositorioMaterialTextil){
+    public ServicioMaterialTextil(RepositorioMaterialTextil repositorioMaterialTextil) {
         this.repositorioMaterialTextil = repositorioMaterialTextil;
     }
 
-    public List<MaterialTextil> listar(){
+    public List<MaterialTextil> listar() {
         return repositorioMaterialTextil.findAll();
     }
 }
