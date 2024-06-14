@@ -9,16 +9,18 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-@RestController @CrossOrigin("http://localhost:5173")
+@RestController
+@CrossOrigin("http://127.0.0.1:5173")
 public class ControladorMaterialTextil {
     ServicioMaterialTextil servicioMaterialTextil;
+
     @Autowired
-    public ControladorMaterialTextil(ServicioMaterialTextil servicioMaterialTextil){
+    public ControladorMaterialTextil(ServicioMaterialTextil servicioMaterialTextil) {
         this.servicioMaterialTextil = servicioMaterialTextil;
     }
 
     @GetMapping("/api/telas/")
-    public List<MaterialTextil> listar(){
+    public List<MaterialTextil> listar() {
         return servicioMaterialTextil.listar();
     }
 }
