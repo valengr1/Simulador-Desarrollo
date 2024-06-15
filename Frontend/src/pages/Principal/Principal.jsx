@@ -11,7 +11,7 @@ function Principal() {
   useEffect(() => {
     const obtenerSimulaciones = () => {
       axios
-        .get("https://fabbrick-simulator-production.up.railway.app/api/simulaciones/")
+        .get("http://localhost:8080/api/simulaciones/")
         .then((res) => {
           setSimulaciones(res.data);
         })

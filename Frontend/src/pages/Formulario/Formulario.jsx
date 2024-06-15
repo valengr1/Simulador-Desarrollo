@@ -17,7 +17,7 @@ function Formulario() {
 
   useEffect(() => {
     const getTiposTela = () => {
-      axios.get("https://fabbrick-simulator-production.up.railway.app/api/telas/").then((res) => {
+      axios.get("http://localhost:8080/api/telas/").then((res) => {
         setTiposTela(res.data);
       });
     };
@@ -42,9 +42,9 @@ function Formulario() {
         var simulacion = { cantidadMateriaTextil: cantidadTela, cantidadPegamento: cantidadPegamento, tipoTela: descripcion };
         var datosUltimaSimulacion;
         console.log(simulacion);
-        axios.post("https://fabbrick-simulator-production.up.railway.app/api/simulaciones/", simulacion).then(() => {
+        axios.post("http://localhost:8080/api/simulaciones/", simulacion).then(() => {
           toast.success("Simulación realizada con éxito", { id: "exito", duration: 2000, delay: 500, position: "top-right" });
-          axios.get("https://fabbrick-simulator-production.up.railway.app/api/simulaciones/lastOne").then((res) => {
+          axios.get("http://localhost:8080/api/simulaciones/lastOne").then((res) => {
             datosUltimaSimulacion = res.data;
           });
         });
@@ -170,7 +170,7 @@ function Formulario() {
               <div className={styles.cuadroResultados}>
                 <div className={styles.cuadroResultadosInner}>
                   <h2><Fade cascade duration={150} delay={100}>Resultados</Fade></h2>
-
+                  <h4 className={styles.mensajeInformativo}>{ultimaSimulacion.mensajeInformativo}</h4>
                   <h4 className={styles.tiempoSecado}>Tipo de tela utilizada: {ultimaSimulacion.tipoTela}</h4>
                   <h4 className={styles.tiempoSecado}>Cantidad de materia textil: {ultimaSimulacion.cantidadMateriaTextil} kg</h4>
                   <h4 className={styles.tiempoSecado}>Cantidad de pegamento ecológico: {ultimaSimulacion.cantidadPegamento} litros</h4>
@@ -253,7 +253,6 @@ function Formulario() {
                       </div>
                     </div>
                   </Zoom>
-                  <h4 className={styles.mensajeInformativo}>{ultimaSimulacion.mensajeInformativo}</h4>
                 </div>
                 <button onClick={volverASimular} className={styles.buttonVolverASimular}>Simular nuevamente</button>
               </div>

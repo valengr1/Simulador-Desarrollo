@@ -50,15 +50,15 @@ function AreaChartComponent({ producidosVsAltaCalidad }) {
         <Area
           type="monotone"
           dataKey="Total"
-          stroke="rgb(255, 78, 108)"
-          fill="rgb(255, 78, 108)"
+          stroke="#62a851"
+          fill="#62a851"
           stackId="1"
         />
         <Area
           type="monotone"
           dataKey="AltaCalidad"
-          stroke="rgb(172, 0, 172)"
-          fill="rgb(172, 0, 172)"
+          stroke="#000"
+          fill="#000"
           stackId="2"
         />
       </AreaChart>

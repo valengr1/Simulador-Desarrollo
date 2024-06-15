@@ -1,40 +1,20 @@
 .principal {
-  background: url("../../images/christoffer-voss-RrtAqhtdJVE-unsplash.jpg");
-  background-size: cover;
-  background-position: center;
-  /* height: 100vh; */
   color: #000;
   font-family: sans-serif;
-  /* background-color: #d7d3ea; */
-  /* display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: sans-serif;
-  flex-direction: column; */
-  /* background-color: #cfcccc; */
 }
 
 .divExterno1 {
-  /* background-color: pink; */
   width: 100vw;
-  /* height: calc(100% - 60px); */
   display: flex;
   justify-content: center;
-  /* margin-top: 6rem; */
-  /* align-items: center; */
-  /* background-color: #fff; */
-  /* backdrop-filter: blur(10px); */
-  /* box-shadow: 0 0.1rem 0.4rem #0002; */
+
 }
 
 .divExterno2 {
-  background-color: rgba(#ffffff, #f5f5f5, #ffffff, 0.8);
-  /* background-color: palegreen; */
-  backdrop-filter: blur(20px);
-
-  box-shadow: 0 0.2rem 0.6rem #0002;
+  /* background-color: rgba(#ffffff, #f5f5f5, #ffffff, 0.8); */
+  /* backdrop-filter: blur(5px); */
+  /* box-shadow: 0 0.2rem 0.6rem #0002; */
   width: 70vw;
-  /* height: 91.5vh; */
   margin-top: 10px;
   margin-bottom: 10px;
   padding-bottom: 10px;
@@ -43,40 +23,7 @@
   justify-content: center;
   text-align: center;
   align-items: center;
-  /* margin-bottom: 10px; */
-  /* background-color: #fff; */
-}
-
-.imagenExterno {
-  /* background-color: pink; */
-  width: 60%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* text-align: center; */
-  padding: 7px;
-  border-radius: 0.8rem;
-  /* margin-top: 10px; */
-  cursor: pointer;
-}
-
-.imagen {
-  width: 100%;
-  height: 100%;
-  border-radius: 0.6rem;
-  box-shadow: 0 0.2rem 0.6rem #0002;
-  /* padding: 7px; */
-  padding-right: 14px;
-  padding-top: 14px;
-  /* margin-bottom: 10px; */
-}
-
-.imagen:hover {
-  scale: 1.02;
-  transition: 0.5s;
-
-  /* background-color: #f4f4f4; */
+  /* background-color: red; */
 }
 
 .simulador {
@@ -89,6 +36,7 @@
   /* border-radius: 0.8rem; */
   border-top-right-radius: 0.8rem;
   border-bottom-right-radius: 0.8rem;
+  /* background-color: red; */
   /* background-color: pink; */
 }
 
@@ -102,6 +50,7 @@ form {
   align-items: center;
   flex-direction: column;
   transition: ease-in-out 0.25s;
+  /* background-color: #fff; */
   /* margin-top: 2rem; */
   /* border-radius: 2rem; */
 }
@@ -109,11 +58,9 @@ form {
 .divFormExterno {
   /* background-color: rgba(255, 255, 255, 0.2); */
   /* background-color: white; */
-  /* backdrop-filter: blur(15px); */
+  backdrop-filter: blur(4px);
   /* background: transparent ; */
   box-shadow: 0 0.2rem 0.6rem #0002;
-  backdrop-filter: blur(20px);
-
   height: 650px;
   width: 80%;
   /* margin-top: 7px; */
@@ -146,8 +93,8 @@ form h2 {
   margin-top: 15px;
   margin-bottom: 20px;
 
-  font-size: 2.5em;
-  color: #1a1a1a;
+  font-size: 2.2em;
+  color: #222;
 }
 
 form input {
@@ -161,14 +108,14 @@ form input {
 }
 
 form label {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   margin-bottom: 10px;
-  color: #efefef;
+  color: #222;
 }
 
 form label:hover {
   cursor: pointer;
-  color: rgb(255, 78, 108);
+  color: #ff6a14;
   transition: 0.5s;
 }
 
@@ -190,7 +137,7 @@ form select {
   text-align: center;
   border-radius: 0.3rem;
   box-shadow: 0 0.1rem 0.4rem #0002;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin-bottom: 10px;
 }
 
@@ -201,28 +148,28 @@ form select:hover {
 }
 
 form button {
-  /* background-color: #fff; */
-  height: 40px;
-  width: 120px;
-  text-align: center;
-  border-radius: 0.6rem;
-  box-shadow: 0 0.2rem 0.6rem #0002;
-  background-color: #efefef;
-  border: none;
-  /* background: none; */
-  font-size: 1.2em;
-  font-family: sans-serif;
-  /* backdrop-filter: blur(5px); */
-  /* border: 1px solid rgb(79, 79, 79); */
-  margin-top: 20px;
-  cursor: pointer;
+    background-color: #fff;
+      text-align: center;
+      padding: 8px;
+      border-radius: 0.6rem;
+      font-size: 1.1em;
+      font-family: sans-serif;
+      margin-top: 10px;
+      cursor: pointer;
+      box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+      outline: 1px solid;
+      outline-color: rgba(255, 255, 255, 0.8);
+      outline-offset: 0px;
+      text-shadow: none;
+      transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+      border: none;
 }
 
 form button:hover {
-  background-color: rgb(255, 78, 108);
-  border: none;
-  color: #000;
-  transition: 0.5s;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, .4),
+      0 0 20px rgba(255, 255, 255, .6);
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 15px;
 }
 
 .divCantidadEInput {
@@ -270,14 +217,14 @@ input[type="range"]::-webkit-slider-thumb {
   appearance: none;
   margin-top: 0px; /* Centers thumb on the track */
   /* background-color: #b0b0b0; */
-  background-color: rgb(255, 78, 108);
+  background-color: #ff6a14;
   border-radius: 1rem;
   height: 1.4rem;
   width: 1.4rem;
 }
 
 input[type="range"]:focus::-webkit-slider-thumb {
-  outline: 3px solid rgb(255, 135, 155);
+  outline: 3px solid #ff853e;
   outline-offset: 0.125rem;
 }
 
@@ -374,14 +321,16 @@ section h2 {
   justify-content: center;
   gap: 4rem;
   margin-bottom: 10px;
-
+  /* flex-direction: column; */
   /* margin-top: 2rem; */
   /* gap: 1rem; */
 }
 
 .resultado {
   color: #000;
-  backdrop-filter: blur(20px);
+  font-family: sans-serif;
+  background: rgba(255, 255, 255, .6);
+  /* backdrop-filter: blur(40px); */
   width: 170px;
   height: 170px;
   border-radius: 100%;
@@ -418,14 +367,14 @@ section h2 {
 
 .resultado h4:hover {
   cursor: pointer;
-  color: rgb(255, 78, 108);
+  color: #ff6a14;
   transition: 0.5s;
 }
 
 .mensajeInformativo {
   font-size: 1.4rem;
   margin-bottom: 10px;
-  color: rgb(222, 222, 222);
+  color: #222;
 }
 
 .tiempoSecado {
@@ -452,41 +401,32 @@ section h2 {
 }
 
 .buttonVolverASimular:hover {
-  background-color: rgb(255, 78, 108);
+  background-color: #ff6a14;
   border: none;
   color: #000;
   transition: 0.5s;
 }
 
-/* @media (max-width: 1600px) {
-  .principal {
-    height: auto;
+@media (max-width: 1370px) {
+  .divExterno1 {
+    width: 100%;
+    /* background-color: red; */
   }
 
   .divExterno2 {
-    width: 80%;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10px;
-  }
-
-  .imagenExterno {
-    height: 600px;
-    width: 80%;
-  }
-
-  .simulador {
     width: 100%;
-    height: auto;
-     margin-top: 10px;
-  }
-
-  form {
-    margin-top: 0;
+    /* background-color: red; */
+    /* flex-direction: column;
+    align-items: center;
+    margin-top: 10px; */
   }
 
   .divFormExterno {
-    background-color: pink;
-    width: 78%;
+    /* background-color: pink; */
+    width: 100%;
   }
-} */
+
+  form h2 {
+    font-size: 2em;
+  }
+}
