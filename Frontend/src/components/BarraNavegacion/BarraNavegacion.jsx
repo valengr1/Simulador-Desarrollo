@@ -19,7 +19,7 @@ function BarraNavegacion() {
           <a href="">Instrucciones</a>
         </li>
       </ul>
-      
+
     </nav>
   );
 }

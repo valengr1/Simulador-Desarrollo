@@ -7,13 +7,9 @@
   width: 100vw;
   display: flex;
   justify-content: center;
-
 }
 
 .divExterno2 {
-  /* background-color: rgba(#ffffff, #f5f5f5, #ffffff, 0.8); */
-  /* backdrop-filter: blur(5px); */
-  /* box-shadow: 0 0.2rem 0.6rem #0002; */
   width: 70vw;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -23,47 +19,32 @@
   justify-content: center;
   text-align: center;
   align-items: center;
-  /* background-color: red; */
 }
 
 .simulador {
-  /* background-color: blue; */
   width: 100%;
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   flex-direction: column;
-  /* border-radius: 0.8rem; */
   border-top-right-radius: 0.8rem;
   border-bottom-right-radius: 0.8rem;
-  /* background-color: red; */
-  /* background-color: pink; */
 }
 
 form {
-  /* background-color: yellow; */
   width: 100%;
-  /* margin-right: 15px; */
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   transition: ease-in-out 0.25s;
-  /* background-color: #fff; */
-  /* margin-top: 2rem; */
-  /* border-radius: 2rem; */
 }
 
 .divFormExterno {
-  /* background-color: rgba(255, 255, 255, 0.2); */
-  /* background-color: white; */
   backdrop-filter: blur(4px);
-  /* background: transparent ; */
   box-shadow: 0 0.2rem 0.6rem #0002;
   height: 650px;
   width: 80%;
-  /* margin-top: 7px; */
   border-radius: 0.6rem;
   display: flex;
   justify-content: center;
@@ -73,14 +54,10 @@ form {
 }
 
 .divFormExterno:hover {
-  /* scale: 1.005; */
-  /* transition: 0.25s; */
   cursor: pointer;
-  /* background-color: #f4f4f4; */
 }
 
 .divLabelInput {
-  /* background-color: blue; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -92,19 +69,16 @@ form {
 form h2 {
   margin-top: 15px;
   margin-bottom: 20px;
-
   font-size: 2.2em;
   color: #222;
 }
 
 form input {
-  /* background-color: green; */
   border: none;
   height: 35px;
   width: 180px;
   text-align: center;
   border-radius: 0.3rem;
-  /* box-shadow:  0 0.1rem 0.4rem #0002; */
 }
 
 form label {
@@ -120,7 +94,6 @@ form label:hover {
 }
 
 .divInputExterno {
-  /* background-color: red; */
   width: 50%;
   display: flex;
   justify-content: center;
@@ -130,7 +103,6 @@ form label:hover {
 }
 
 form select {
-  /* background-color: green; */
   border: none;
   height: 40px;
   width: 220px;
@@ -148,32 +120,31 @@ form select:hover {
 }
 
 form button {
-    background-color: #fff;
-      text-align: center;
-      padding: 8px;
-      border-radius: 0.6rem;
-      font-size: 1.1em;
-      font-family: sans-serif;
-      margin-top: 10px;
-      cursor: pointer;
-      box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
-      outline: 1px solid;
-      outline-color: rgba(255, 255, 255, 0.8);
-      outline-offset: 0px;
-      text-shadow: none;
-      transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
-      border: none;
+  background-color: #fff;
+  text-align: center;
+  padding: 8px;
+  border-radius: 0.6rem;
+  font-size: 1.1em;
+  font-family: sans-serif;
+  margin-top: 10px;
+  cursor: pointer;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+  outline: 1px solid;
+  outline-color: rgba(255, 255, 255, 0.8);
+  outline-offset: 0px;
+  text-shadow: none;
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+  border: none;
 }
 
 form button:hover {
-  box-shadow: inset 0 0 20px rgba(255, 255, 255, .4),
-      0 0 20px rgba(255, 255, 255, .6);
-    outline-color: rgba(255, 255, 255, 0);
-    outline-offset: 15px;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.4),
+    0 0 20px rgba(255, 255, 255, 0.6);
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
 }
 
 .divCantidadEInput {
-  /* background-color: pink; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -181,7 +152,6 @@ form button:hover {
   text-align: center;
   margin-top: 5px;
   margin-bottom: 5px;
-  /* background-color: pink; */
 }
 
 input[type="number"] {
@@ -250,12 +220,6 @@ input[type="range"]:focus::-moz-range-thumb {
   outline-offset: 0.125rem;
 }
 
-/* .divCantidadEInput input{
-  width: 200px;
-  height: 40px;
-  writing-mode: vertical-rl;
-} */
-
 form h4 {
   font-size: 1.3rem;
   color: #fff;
@@ -263,39 +227,27 @@ form h4 {
 }
 
 section {
-  /* background-color: red; */
   width: 100%;
   display: flex;
-  /* gap: 1rem; */
-  /* height: 800px; */
   justify-content: center;
   align-items: center;
   flex-direction: column;
   position: relative;
-  /* margin-top: 15px; */
-  /* margin-right: 7px; */
   transition: ease-in-out 0.25s;
-  /* margin-top: -40px; */
-  /* height: 110vh; */
 }
 
 section h2 {
   margin-top: 35px;
-  /* margin-bottom: 20px; */
   font-size: 2.5em;
-  color: #1a1a1a;
+  color: #222;
 }
 
 .cuadroResultados {
-  /* background-color: yellow; */
   width: 100%;
-  /* height: 100%; */
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
-  /* margin-top: 10px; */
 }
 
 .cuadroResultados h2 {
@@ -304,33 +256,26 @@ section h2 {
 }
 
 .cuadroResultadosInner {
-  /* background-color: blueviolet; */
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  /* height: 100%; */
 }
 
 .cuadroResultadosInner2 {
-  /* background-color: pink; */
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 4rem;
   margin-bottom: 10px;
-  /* flex-direction: column; */
-  /* margin-top: 2rem; */
-  /* gap: 1rem; */
 }
 
 .resultado {
   color: #000;
   font-family: sans-serif;
-  background: rgba(255, 255, 255, .6);
-  /* backdrop-filter: blur(40px); */
+  background: rgba(255, 255, 255, 0.6);
   width: 170px;
   height: 170px;
   border-radius: 100%;
@@ -383,46 +328,40 @@ section h2 {
 }
 
 .buttonVolverASimular {
-  height: 40px;
-  /* width: 120px; */
+  background-color: #fff;
   text-align: center;
+  padding: 8px;
   border-radius: 0.6rem;
-  box-shadow: 0 0.2rem 0.6rem #0002;
-  background-color: #efefef;
-  border: none;
-  /* background: none; */
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-family: sans-serif;
-  /* backdrop-filter: blur(5px); */
-  /* border: 1px solid rgb(79, 79, 79); */
-  margin-top: 20px;
+  margin-top: 10px;
   cursor: pointer;
-  padding: 7px;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+  outline: 1px solid;
+  outline-color: rgba(255, 255, 255, 0.8);
+  outline-offset: 0px;
+  text-shadow: none;
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+  border: none;
 }
 
 .buttonVolverASimular:hover {
-  background-color: #ff6a14;
-  border: none;
-  color: #000;
-  transition: 0.5s;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.4),
+    0 0 20px rgba(255, 255, 255, 0.6);
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
 }
 
 @media (max-width: 1370px) {
   .divExterno1 {
     width: 100%;
-    /* background-color: red; */
   }
 
   .divExterno2 {
     width: 100%;
-    /* background-color: red; */
-    /* flex-direction: column;
-    align-items: center;
-    margin-top: 10px; */
   }
 
   .divFormExterno {
-    /* background-color: pink; */
     width: 100%;
   }
 

@@ -92,8 +92,6 @@ function Formulario() {
   }
 
   return (
-
-
     <div
       className={styles.principal} >
       <Toaster position="bottom-right" />
