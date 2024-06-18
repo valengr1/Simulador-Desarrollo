@@ -17,7 +17,8 @@
   box-shadow: 0 0.2rem 0.6rem #0002;
   gap: 9rem;
   width: 100vw;
-  margin-left: 20vw;
+  /* margin-left: 20vw; */
+  /* background-color: #fff; */
 }
 
 .divVolver {
@@ -54,14 +55,11 @@ li:hover {
 a {
   text-decoration: none;
   transition: ease-in-out 0.5s;
+  color: #000;
 }
 
 a:visited {
   color: #000;
-}
-
-a:hover {
-  transition: ease-in-out 0.3s;
 }
 
 .logo {

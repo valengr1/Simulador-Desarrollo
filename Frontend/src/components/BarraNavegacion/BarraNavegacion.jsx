@@ -1,22 +1,26 @@
+import { useNavigate } from "react-router-dom";
 import styles from "../BarraNavegacion/BarraNavegacion.module.css";
 
 function BarraNavegacion() {
+  const navigate = useNavigate();
+
+
   return (
     <nav className={styles.navbar}>
       <div className={styles.divVolver}>
-        <a className={styles.aVolver} href="/">
+        <a className={styles.aVolver} onClick={() => { navigate("/") }} href="#">
           <i className="fa-solid fa-arrow-left"></i>
         </a>
       </div>
 
       <ul>
         <li>
-          <a href="/mision">Mision</a>
+          <a onClick={() => { navigate("/mision") }} href="#">Mision</a>
         </li>
         <a className={styles.logo} href="https://www.fab-brick.com/"></a>
 
         <li>
-          <a href="">Instrucciones</a>
+          <a onClick={() => { navigate("/instrucciones") }} href="#">Instrucciones</a>
         </li>
       </ul>
 

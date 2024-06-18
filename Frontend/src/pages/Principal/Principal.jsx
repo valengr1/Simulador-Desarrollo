@@ -4,9 +4,11 @@ import AreaChart from "../../components/Grafico/AreaChart";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { Fade, Zoom } from "react-awesome-reveal";
+import { useNavigate } from "react-router-dom";
 function Principal() {
 
   const [simulaciones, setSimulaciones] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const obtenerSimulaciones = () => {
@@ -48,7 +50,7 @@ function Principal() {
             </div>
           </Zoom>
         </div>
-        <a className={styles.btnSimular} href="/simular">
+        <a className={styles.btnSimular} onClick={() => { navigate("/simular") }}>
           Simular
         </a>
       </div>
