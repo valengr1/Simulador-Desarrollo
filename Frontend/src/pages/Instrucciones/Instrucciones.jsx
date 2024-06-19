@@ -14,7 +14,7 @@ function Instrucciones() {
                     <Zoom delay={300} duration={500}>
                         <h2>¿Qué simulamos?</h2>
                         <p>Simulamos el proceso de producción de un lote de ladrillos ecológicos a base de material textil y pegamento ecológico.</p>
-                        <h4>Cuáles son los pasos del proceso de producción?</h4>
+                        <h4>¿Cuáles son los pasos del proceso de producción?</h4>
                         <div>
 
                             <p>Los pasos del proceso de producción son los siguientes:</p>
