@@ -11,33 +11,6 @@ import {
   Legend,
 } from "recharts";
 
-// const dataComponent = [
-//   {
-//     name: "Jan",
-//     product1: 1000,
-//     product2: 2200,
-//   },
-//   {
-//     name: "Val",
-//     product1: 2000,
-//     product2: 3200,
-//   },
-//   {
-//     name: "Agu",
-//     product1: 3000,
-//     product2: 4200,
-//   },
-//   {
-//     name: "Avr",
-//     product1: 1500,
-//     product2: 1200,
-//   },
-//   {
-//     name: "Kar",
-//     product1: 4000,
-//     product2: 5200,
-//   },
-// ];
 function AreaChartComponent({ producidosVsAltaCalidad }) {
   return (
     <ResponsiveContainer width="100%" height="100%">
