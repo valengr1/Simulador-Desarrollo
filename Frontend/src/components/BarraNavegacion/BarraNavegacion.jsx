@@ -8,19 +8,19 @@ function BarraNavegacion() {
   return (
     <nav className={styles.navbar}>
       <div className={styles.divVolver}>
-        <a className={styles.aVolver} onClick={() => { navigate("/") }} href="#">
+        <a className={styles.aVolver} onClick={() => { navigate("/") }} >
           <i className="fa-solid fa-arrow-left"></i>
         </a>
       </div>
 
       <ul>
         <li>
-          <a onClick={() => { navigate("/mision") }} href="#">Mision</a>
+          <a onClick={() => { navigate("/mision") }} >Mision</a>
         </li>
         <a className={styles.logo} href="https://www.fab-brick.com/"></a>
 
         <li>
-          <a onClick={() => { navigate("/instrucciones") }} href="#">Instrucciones</a>
+          <a onClick={() => { navigate("/instrucciones") }} >Instrucciones</a>
         </li>
       </ul>
 

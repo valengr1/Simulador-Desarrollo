@@ -11,7 +11,7 @@
 }
 
 .card {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(4px);
   width: 80%;
   padding: 20px;
@@ -30,7 +30,7 @@
 .card:hover {
   /* scale: 1.02; */
   transition: 0.5s;
-  background-color: #eaeaea;
+  background-color: rgba(255, 255, 255, 0.8);
   cursor: pointer;
 }
 
